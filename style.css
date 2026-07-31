@@ -1,0 +1,232 @@
+/* style.css - external stylesheet for the project */
+/* Replace colors and fonts as you wish. */
+
+/* Base resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  color: #222;
+  background: #f6f7fb;
+}
+a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Header */
+.site-header {
+  background: #0a1f44;
+  color: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+.logo a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+.main-nav a {
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  border-radius: 6px;
+}
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Nav toggle (mobile) */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/* Hero and cards */
+.hero {
+  background: linear-gradient(135deg, #e6f0ff, #f7fbff);
+  padding: 1.25rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(10, 20, 40, 0.06);
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+.gallery-grid figure {
+  background: #fff;
+  padding: 0.4rem;
+  border-radius: 6px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.striped tbody tr:nth-child(odd) {
+  background: #fafafa;
+}
+
+/* Forms */
+.form-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(10, 20, 40, 0.04);
+  max-width: 700px;
+}
+.form-card label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+  font-weight: 600;
+}
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card input[type="number"],
+.form-card textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.checkboxes label {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.form-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  background: #0a66c2;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+.btn.outline {
+  background: transparent;
+  color: #0a66c2;
+  border: 1px solid #0a66c2;
+}
+
+/* Footer */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .main-nav {
+    position: absolute;
+    top: 64px;
+    right: 1rem;
+    background: #0a1f44;
+    border-radius: 8px;
+    display: none;
+    padding: 0.5rem;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .main-nav[aria-hidden="false"],
+  .main-nav[aria-expanded="true"] {
+    display: block;
+  }
+}
+
+/* Hover and transitions */
+a,
+.btn {
+  transition:
+    transform 0.12s ease,
+    background-color 0.12s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(10, 20, 40, 0.08);
+}
+
+/* Accessibility focus */
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid rgba(10, 102, 194, 0.15);
+  outline-offset: 2px;
+}

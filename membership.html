@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Membership Registration</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Programming Club</a></h1>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="membership.html" aria-current="page">Membership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Membership Registration</h2>
+
+    <form id="membership-form" class="card form-card" action="#" method="post" novalidate>
+      <fieldset>
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" required minlength="3" />
+
+        <label for="regno">Registration Number</label>
+        <input id="regno" name="regno" type="text" required pattern="[A-Za-z0-9\-\/]+" placeholder="e.g., SCT221-D1-0109/2026" />
+
+        <label for="programme">Programme</label>
+        <input id="programme" name="programme" type="text" required />
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Telephone Number</label>
+        <input id="phone" name="phone" type="tel" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+123456789" required />
+
+        <label for="year">Year of Study</label>
+        <input id="year" name="year" type="number" min="1" max="8" required />
+
+        <p>Gender</p>
+        <label><input type="radio" name="gender" value="female" required /> Female</label>
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+
+        <label for="interests">Club Interests (select all that apply)</label>
+        <div class="checkboxes">
+          <label><input type="checkbox" name="interests" value="web" /> Web Development</label>
+          <label><input type="checkbox" name="interests" value="ai" /> AI/ML</label>
+          <label><input type="checkbox" name="interests" value="mobile" /> Mobile Apps</label>
+          <label><input type="checkbox" name="interests" value="cyber" /> Cybersecurity</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> University Programming Club</p>
+      <p>Student: NAPHTALI NKOBULU KIMASISA | Reg No: SCT221-D1-0109/2026</p>
+    </div>
+  </footer>
+</body>
+</html>

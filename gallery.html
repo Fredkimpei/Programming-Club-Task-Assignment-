@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Programming Club</a></h1>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Photo Gallery</h2>
+    <p>Below are sample images. Save your photos into the images/ folder and update the filenames here.</p>
+
+    <section class="gallery-grid">
+      <figure>
+        <img src="images/event1.jpg" alt="Workshop" />
+        <figcaption>Intro to Python — Workshop</figcaption>
+      </figure>
+      <figure>
+        <img src="images/event2.jpg" alt="Hackathon" />
+        <figcaption>24-hour Hackathon</figcaption>
+      </figure>
+      <figure>
+        <img src="images/event3.jpg" alt="Project showcase" />
+        <figcaption>Project Showcase</figcaption>
+      </figure>
+      <figure>
+        <img src="images/event4.jpg" alt="Team" />
+        <figcaption>Team Collaboration</figcaption>
+      </figure>
+    </section>
+
+    <p>Tip: Use thumbnails at ~800x600 or smaller for fast load times.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> University Programming Club</p>
+      <p>Student: NAPHTALI NKOBULU KIMASISA | Reg No: SCT221-D1-0109/2026</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Programming Club</a></h1>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>For enquiries, email us at <a href="mailto:programmingclub@example.edu">programmingclub@example.edu</a> or call +123 456 7890.</p>
+
+    <section class="card">
+      <h3>Office Hours</h3>
+      <p>Monday — Friday: 9:00 AM — 5:00 PM</p>
+      <p>Location: Student Centre, Room 204</p>
+    </section>
+
+    <section class="card">
+      <h3>Quick Contact Form</h3>
+      <form id="contact-form" action="#" method="post" class="form-card" novalidate>
+        <label for="cname">Name</label>
+        <input id="cname" type="text" required />
+
+        <label for="cemail">Email</label>
+        <input id="cemail" type="email" required />
+
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" rows="4" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> University Programming Club</p>
+      <p>Student: NAPHTALI NKOBULU KIMASISA | Reg No: SCT221-D1-0109/2026</p>
+    </div>
+  </footer>
+</body>
+</html>

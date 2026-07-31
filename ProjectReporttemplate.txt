@@ -1,0 +1,43 @@
+Project Title:
+DEVELOPMENT OF A RESPONSIVE UNIVERSITY CLUB WEBSITE
+
+Student Name: NAPHTALI NKOBULU KIMASISA
+Registration Number: SCT221-D1-0109/2026
+Course: ICS 2302 - Web Application Development I
+
+1. Objectives
+
+- (List project objectives — e.g., create a responsive site, membership form, gallery...)
+
+2. Website structure (Site Map)
+
+- Home (index.html)
+- About (about.html)
+- Activities (activities.html)
+- Gallery (gallery.html)
+- Membership (membership.html)
+- Contact (contact.html)
+
+3. Design tools used
+
+- Text editor (VS Code / Notepad++)
+- Browser (Chrome, Firefox)
+- Graphics editor (optional) for images
+
+4. Screenshots
+
+- Insert screenshots of each webpage (Home, About, Activities, Gallery, Membership, Contact)
+
+5. Challenges encountered
+
+- (Describe any issues like responsive layout, form validation, image optimization)
+
+6. Lessons learned
+
+- (What you learned about HTML5, CSS3, responsive design, forms, accessibility...)
+
+7. Conclusion
+
+- (Summarize the project, future improvements)
+
+Save this content into Microsoft Word, format it into 3–5 pages, then save as both .docx and PDF.
